@@ -62,7 +62,8 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
-    raise NotImplementedError("every_other")
+    filtered_list = lst[::2] #First : indicates whole list, :2 means taking every 2nd item starting from the first.
+    return filtered_list
 
 
 def sum_list(lst: List[int]) -> int:
@@ -75,7 +76,13 @@ def sum_list(lst: List[int]) -> int:
     Returns:
         the sum of the passed in list
     """
-    raise NotImplementedError("sum_list")
+    sum = 0
+    i = 0
+    while i < len(lst):
+        sum = sum + lst[i]
+        i += 1
+    return sum
+        
 
 
 def mean(lst: List[int]) -> float:
@@ -87,7 +94,13 @@ def mean(lst: List[int]) -> float:
     Returns:
         the mean of the passed in list
     """
-    raise NotImplementedError("mean")
+    sum = 0
+    i = 0
+    while i < len(lst):
+        sum = sum + lst[i]
+        i += 1
+    sum /= i
+    return sum
 
 
 def median(lst: List[int]) -> float:
@@ -102,7 +115,12 @@ def median(lst: List[int]) -> float:
     Returns:
         the median of the passed in list
     """
-    raise NotImplementedError("median")
+    if len(lst) % 2 == 0:
+        med = len(lst) / 2
+        return (lst[med] + lst[med+1]) / 2
+    else:
+        med = len(lst) / 2
+        return lst[med]
 
 
 def duck_duck_goose(lst: List[str]) -> List[str]:
