@@ -17,7 +17,6 @@ assert fizbuzz(5) == "Buzz", "fizzbuzz 5 test"
 assert fizbuzz(6) == "Fizz", "fizzbuzz 6 test"
 assert fizbuzz(15) == "FizzBuzz", "fizzbuzz 15 test"
 
-
 #1. Basic Syntax and Variables
 #Write a Python program that declares a few variables of different types (integer, float, string, and boolean). Print these variables and their types to the console.
 
@@ -26,8 +25,14 @@ def variables(var):
         print(str(var) + " is an integer.")
     if(type(var)==str):
         print(var + " is a string.")
+    if(type(var)==bool):
+        print(str(var) + " is a boolean.")
+    if(type(var)==float):
+        print(str(var) + " is a float.")
 variables(3)
 variables("hello")
+variables(True)
+variables(3.14)
 
 #2. Control Structures
 #Write a Python program that checks if a number is even or odd using an if statement. Then, use a for loop to iterate through a range of numbers from 1 to 10 and print whether each number is even or odd.
@@ -39,17 +44,13 @@ def even_odd(num):
         print(str(num) + " is odd.")
 even_odd(5)
 even_odd(6)
-#3. Functions
-#Create a Python function that takes two arguments, adds them together, and returns the result. Then, call this function with different pairs of numbers and print the results.
 
-
-
-#4. Lists and Slicing
+#3. Lists and Slicing
 #Create a Python list with 5 different elements. Use slicing to create a new list that contains only the first three elements. Then, print both the original and sliced lists.
 
-
-
-#5. Dictionaries and Loops
-#Create a Python dictionary with three key-value pairs where the keys are strings and the values are integers. Write a loop that iterates over the dictionary and prints each key along with its value.
-
-
+my_list = [1, 2, 3, 4, 5]
+def slice(lst):
+    first_three = lst[:3]
+    print(lst)
+    print(first_three)
+slice(my_list)

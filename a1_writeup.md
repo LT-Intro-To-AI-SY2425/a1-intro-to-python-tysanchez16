@@ -14,10 +14,12 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 
 1. What is your initial thoughts about the python programming language?
 
-
+My initial thoughts about python is that it doesn't seem too complicated and I'm able to use some prior knowledge from other coding languages to figure it out.
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
 
-
+I find similarities in how each language functions when resolving a certian task, but differences in the actual syntax needed to execute each function.
 
 3. What are some things that you learned through this assignment?
+
+I learned some basic python commands and how they are used, I was able to practice by doing simple problems like adding, finding the mean, median, and removing items in a list.
